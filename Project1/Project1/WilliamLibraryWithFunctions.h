@@ -51,26 +51,3 @@ the winner: 0=Draw 1=user Won 2=Computer Won */
 	}
 
 }
-//--------------------------------------------------------------------------------
-char askRepeat()
-/*Asks the user if another game is desired and returns response
-Post: User has been asked and has responded with Y, y, N, or n.
-The response is returned. */
-{
-	char ans;
-	cout << "Would you like to play another game? (Y/N): ";
-	cin >> ans;
-	return ans;
-}
-
-//--------------------------------------------------------------------------------
-void report(int Wins, int Losses, int Draws)
-/*Reports the current results
-Pre: Wins, Losses, Draws represent the current results
-Post: The current results have been displayed */
-{
-	cout << "Your wins: " << Wins << endl;
-	cout << "Computer wins: " << Losses << endl;
-	cout << "Draws: " << Draws << endl;
-}
-//--------------------------------------------------------------------------------
