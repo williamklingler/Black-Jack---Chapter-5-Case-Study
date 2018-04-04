@@ -42,23 +42,6 @@ the winner: 0=Draw 1=user Won 2=Computer Won */
 
 }
 //--------------------------------------------------------------------------------
-void updateCount(int Result, int &Wins, int &Losses, int &Draws)
-/*Increments one of the counters as determined by Result
-Pre: Result is either 0, 1, or 2
-Post: Either Wins, Losses, or Draws has been incremented based
-upon whether Result is 1, 2, or 0 respectively */
-{
-	switch (Result)
-	{
-	case 0: Draws++;
-		break;
-	case 1: Wins++;
-		break;
-	case 2: Losses++;
-		break;
-	}
-}
-//--------------------------------------------------------------------------------
 char askRepeat()
 /*Asks the user if another game is desired and returns response
 Post: User has been asked and has responded with Y, y, N, or n.

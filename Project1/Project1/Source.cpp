@@ -2,6 +2,7 @@
 #include <cstdlib>
 #include <ctime>
 #include "WilliamLibraryWithFunctions.h"
+#include "RyanLibrary.h"
 using namespace std;
 
 void intro();
@@ -28,9 +29,3 @@ int main()
 	return 0;
 }
 
-void intro()
-{
-	cout << " 2 1 \n" << "Rules of game: Player and dealer are each dealt the same amount of cards. Each card holds a value from 1-10.\n";
-	cout << "The sum of each players cards are then counted. If anyone's sum is over 21, they bust. The goal is to have as high as a number as possible\n";
-	cout << "without going over 21. If both players get the same sum or both bust, it is a draw. Enjoy, and gamble responsibly!\n";
-}
