@@ -35,6 +35,16 @@ the winner: 0=Draw 1=user Won 2=Computer Won */
 		cout << "Computer Wins!\n";
 		return 2;
 	}
+	else if (p1Sum > 21 && p2Sum <= 21)
+	{
+		cout << "Computer Wins!\n";
+		return 2;
+	}
+	else if (p2Sum > 21 && p1Sum <= 21)
+	{
+		cout << "You win!\n";
+		return 1;
+	}
 	else {
 		cout << "Draw!\n";
 		return 0;

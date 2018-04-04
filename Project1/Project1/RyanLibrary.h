@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-void UpdateCount(int Result, int &Wins, int &Losses, int &Draws)
+void updateCount(int Result, int &Wins, int &Losses, int &Draws)
 /*Increments one of the counters as determined by Result
 Pre: Result is either 0, 1, or 2
 Post: Either Wins, Losses, or Draws has been incremented based
