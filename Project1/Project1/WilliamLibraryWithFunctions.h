@@ -12,7 +12,9 @@ the winner: 0=Draw 1=user Won 2=Computer Won */
 	cout << "You: ";
 	for (int j = 0; j < i; j++)
 	{
-		int num = rand() % 10;
+		int num = rand() % 13 + 1;
+		if (num > 10)
+			num = 10;
 		p1Sum += num;
 		cout << num << " ";
 	}
@@ -20,7 +22,9 @@ the winner: 0=Draw 1=user Won 2=Computer Won */
 	cout << "Computer: ";
 	for (int j = 0; j < i; j++)
 	{
-		int num = rand() % 10;
+		int num = rand() % 13 + 1;
+		if (num > 10)
+			num = 10;
 		p2Sum += num;
 		cout << num << " ";
 	}

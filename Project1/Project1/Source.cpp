@@ -1,7 +1,8 @@
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
-#include "WilliamLibraryWithFunctions.h"
+//#include "WilliamLibraryWithFunctions.h"
+#include "WilliamLibrary.h"
 #include "RyanLibrary.h"
 #include "AbubakerLibrary.h"
 using namespace std;
@@ -14,15 +15,18 @@ void report(int Wins, int Losses, int Draws);
 
 int main()
 {
+	int p1Sum = 0 , p2Sum = 0;
 	intro();
 	srand(time(NULL));
 	int Wins = 0, Losses = 0, Draws = 0;
 	char Answer;
 	do {
 		int Result; // 0=draw 1=user win 2=computer win int
-		Result = playGame();
+		Result = playGame(p1Sum, p2Sum);
 		updateCount(Result, Wins, Losses, Draws);
 		Answer = askRepeat();
+		p1Sum = 0;
+		p2Sum = 0;
 	} while ((Answer != 'N') && (Answer != 'n'));
 	report(Wins, Losses, Draws);
 
