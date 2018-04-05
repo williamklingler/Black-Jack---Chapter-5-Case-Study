@@ -46,6 +46,7 @@ int askAnotherCard()
 
 void dealComputer(int &p2Sum)
 {
+	cout << "Computer: " << endl;
 	for (int j = 0; j < 2; j++)
 	{
 		dealCard(p2Sum);
@@ -72,6 +73,12 @@ void dealUser(int &p1Sum)
 		cout << p1Sum << " ";
 		dealCard(p1Sum);
 		cout << " = " << p1Sum << endl;
+		if (p1Sum > 21)
+		{
+			cout << "Bust!" << endl;
+			break;
+		}
+		else
 		k = askAnotherCard();
 	}
 }
